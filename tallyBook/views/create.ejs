@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.metroui.org.ua/current/metro.css"
+    />
+    <link
+      href="https://cdn.metroui.org.ua/current/icons.css"
+      rel="stylesheet"
+    />
+    <style>
+      .wrapper {
+        padding: 150px;
+        background-image: url('/images/wrinkl.png');
+      }
+      .title {
+        margin: 0 auto;
+        text-align: center;
+      }
+      form {
+        width: 500px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper container-fluid">
+        <div class="title">
+            <h1><small>创建账目</small></h1>
+        </div>
+      <form accept="/create" method="post" class="border border-size-3 bd-gray p-5">
+        <div class="row mb-2">
+          <label class="cell-sm-2">事项</label>
+          <div class="cell-sm-10">
+            <input name="thing" type="text" class="metro-input" />
+          </div>
+        </div>
+        <div class="row mb-2">
+          <label class="cell-sm-2">描述</label>
+          <div class="cell-sm-10">
+            <textarea
+            name="descrip"
+              data-role="textarea"
+              data-prepend="<span class='mif-leanpub'></span>"
+            ></textarea>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <label class="cell-sm-2">金额</label>
+          <div class="cell-sm-10">
+            <!-- <input type="password" class="metro-input" /> -->
+            <input
+              type="text"
+              name="money"
+              data-role="input"
+              class="mb-1"
+              data-prepend="<span class='mif-dollar2'></span>"
+              data-append="<span>0.00</span>"
+              title=""
+            />
+          </div>
+        </div>
+        <div class="row mb-2">
+          <label class="cell-sm-2">收支</label>
+          <div class="cell-sm-10">
+            <select name="select" data-role="select">
+              <!-- <option class="fg-cyan"></option> -->
+              <option value="1" selected class="text-bold fg-red">收入</option>
+              <option value="-1" class="text-bold fg-green">支出</option>
+            </select>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <label class="cell-sm-2">日期</label>
+          <div class="cell-sm-10">
+            <input name="date" data-role="datepicker" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="cell">
+            <button type="submit" class="button primary">提交</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script src="https://cdn.metroui.org.ua/current/metro.js"></script>
+  </body>
+</html>

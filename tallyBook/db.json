@@ -1,0 +1,45 @@
+{
+  "posts": [
+    {
+      "id": "AuCKU6RAiHukz9jb-1_qc",
+      "thing": "发工资",
+      "descrip": "1月份到2月份的工资到账",
+      "money": "200000",
+      "select": "1",
+      "date": "2024-01-26"
+    },
+    {
+      "id": "Br0D35wdFiGyFcNRNrEOe",
+      "thing": "卖电话",
+      "descrip": "将不用的电话卖出去",
+      "money": "992",
+      "select": "1",
+      "date": "2024-07-26"
+    },
+    {
+      "id": "ziPIEZuONQdXjHGcsYxhQ",
+      "thing": "买衣服",
+      "descrip": "去优衣库买了10件半截袖",
+      "money": "990",
+      "select": "-1",
+      "date": "2024-07-30"
+    },
+    {
+      "id": "5sw9aHLGkn3V5bmEZlE1g",
+      "thing": "看电影",
+      "descrip": "看了最新的电影，《抓娃娃》",
+      "money": "120",
+      "select": "-1",
+      "date": "2022-04-24"
+    },
+    {
+      "id": "vV2iFqM2GtII6mlr40ecY",
+      "thing": "买课",
+      "descrip": "购买课程一部",
+      "money": "299",
+      "select": "-1",
+      "date": "2024-07-26"
+    }
+  ],
+  "user": {}
+}
