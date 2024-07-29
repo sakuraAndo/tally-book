@@ -1,6 +1,14 @@
 {
   "posts": [
     {
+      "id": "W2gDDR7ETT0OftP4SYReJ",
+      "thing": "剪头",
+      "descrip": "头发长了去理发",
+      "money": "20",
+      "select": "-1",
+      "date": "2024-07-29"
+    },
+    {
       "id": "AuCKU6RAiHukz9jb-1_qc",
       "thing": "发工资",
       "descrip": "1月份到2月份的工资到账",
@@ -39,6 +47,14 @@
       "money": "299",
       "select": "-1",
       "date": "2024-07-26"
+    },
+    {
+      "id": "Cq0xfDxQAgPU1fjhwUXIl",
+      "thing": "吃早饭",
+      "descrip": "一个包子一个小米粥一个茶蛋",
+      "money": "6.5",
+      "select": "-1",
+      "date": "2024-07-27"
     }
   ],
   "user": {}

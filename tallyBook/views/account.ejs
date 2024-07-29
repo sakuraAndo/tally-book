@@ -19,9 +19,17 @@
     </style>
   </head>
   <body>
-    <div data-role="appbar">
+    <div style="padding-left: 100px" data-role="appbar">
       <h1>tally <small>book</small></h1>
-      <img class="ml-5" width="150" height="150" src="/images/tally.jpg" />
+      <a href="/create">
+        <img
+          class="ml-5"
+          width="150"
+          height="150"
+          src="/images/write.jpg"
+          alt="去记账"
+        />
+      </a>
     </div>
     <div class="wrapper container-fluid">
       <table class="table table-border cell-border">
@@ -49,12 +57,16 @@
             <td>
               <span>
                 <!-- dialog -->
-                <div class="dialog" data-role="dialog" id="demoDialog<%= index %>">
+                <div
+                  class="dialog"
+                  data-role="dialog"
+                  id="demoDialog<%= index %>"
+                >
                   <div class="dialog-title">事件明细</div>
                   <div class="dialog-content">
-                    标题: <%= item.thing %> <br>
-                    时间: <%= item.date %> <br>
-                    描述： <%= item.descrip %> <br>
+                    标题: <%= item.thing %> <br />
+                    时间: <%= item.date %> <br />
+                    描述： <%= item.descrip %> <br />
                   </div>
                   <div class="dialog-actions">
                     <!-- <button class="button js-dialog-close"></button> -->
@@ -71,9 +83,17 @@
                 >
                   <span class="mif-info1"></span>
                 </button>
-                <button class="button cycle warning">
-                  <span class="mif-bin"></span>
-                </button>
+
+                <a href="/account/<%= item.id %>">
+                  <button
+                    id="delete-button-<%= index %>"
+                    onclick="deleteItem(this, '<%= JSON.stringify(item) %>')"
+                    value="<%- JSON.stringify(item) %>"
+                    class="button cycle warning"
+                  >
+                    <span class="mif-bin"></span>
+                  </button>
+                </a>
               </span>
             </td>
           </tr>
@@ -84,6 +104,14 @@
 
     <script src="https://cdn.metroui.org.ua/current/metro.js"></script>
     <script>
+      // 如何传递object过来？？？
+      function deleteItem(el, item) {
+        // const value = $(`#delete-button-${index}`).attr('value')
+        console.log(item);
+      }
+      // $('#delete').on("click", function(e){
+      //   console.log(e);
+      // });
       // 优化dialog
       // console.log('23423', '<%= lists.map(item => item.thing) %>');
     </script>

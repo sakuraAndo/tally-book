@@ -11,7 +11,15 @@ router.get('/', function (req, res, next) {
 
 router.get('/account', (req, res, next) => {
   const lists = db.get('posts').value();
-  res.render('account', {lists: lists});
+  res.render('account', { lists: lists });
+});
+
+router.get('/account/:id', (req, res, next) => {
+  const id = req.params.id;
+  db.get('posts').remove({ id }).write();
+
+  const lists = db.get('posts').value();
+  res.render('account', { lists: lists });
 });
 
 router.get('/create', (req, res, next) => {
@@ -20,7 +28,7 @@ router.get('/create', (req, res, next) => {
 
 router.post('/create', (req, res, next) => {
   db.get('posts')
-    .push({ id: nanoid(), ...req.body })
+    .unshift({ id: nanoid(), ...req.body })
     .write();
   res.send('成功');
 });

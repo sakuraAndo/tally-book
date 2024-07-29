@@ -14,7 +14,7 @@
     />
     <style>
       .wrapper {
-        padding: 150px;
+        padding: 80px;
         background-image: url('/images/wrinkl.png');
       }
       .title {
@@ -29,10 +29,21 @@
   </head>
   <body>
     <div class="wrapper container-fluid">
-        <div class="title">
-            <h1><small>创建账目</small></h1>
-        </div>
-      <form accept="/create" method="post" class="border border-size-3 bd-gray p-5">
+      <div>
+        <a href="/account">
+          <span class="mif-backspace mif-5x"></span>
+        </a>
+      </div>
+      <div class="title">
+        <img width="150" height="150" src="/images/accountbook.png" />
+        <h1><small>create account</small></h1>
+      </div>
+      <form
+        accept="/create"
+        method="post"
+        id="myform"
+        class="border border-size-3 bd-gray p-5"
+      >
         <div class="row mb-2">
           <label class="cell-sm-2">事项</label>
           <div class="cell-sm-10">
@@ -43,7 +54,7 @@
           <label class="cell-sm-2">描述</label>
           <div class="cell-sm-10">
             <textarea
-            name="descrip"
+              name="descrip"
               data-role="textarea"
               data-prepend="<span class='mif-leanpub'></span>"
             ></textarea>
@@ -87,7 +98,6 @@
         </div>
       </form>
     </div>
-
     <script src="https://cdn.metroui.org.ua/current/metro.js"></script>
   </body>
 </html>
