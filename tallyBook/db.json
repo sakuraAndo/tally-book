@@ -1,6 +1,38 @@
 {
   "posts": [
     {
+      "id": "jjv96aZMtsg5ei8iR_SZ1",
+      "thing": "卖电话",
+      "descrip": "卖出电话",
+      "money": "10000",
+      "select": "1",
+      "date": "2024-07-29"
+    },
+    {
+      "id": "PLu0ImrW5cIWKhMICliEM",
+      "thing": "开发项目",
+      "descrip": "为公司解决一个技术难题",
+      "money": "30000",
+      "select": "1",
+      "date": "2024-07-29"
+    },
+    {
+      "id": "OH_ZLnCVUlLdQ-ag_fW7X",
+      "thing": "买生活用品",
+      "descrip": "买了牙刷和盆子",
+      "money": "19",
+      "select": "-1",
+      "date": "2024-07-29"
+    },
+    {
+      "id": "LuCx6vhU0T_d41Ui5mCd_",
+      "thing": "洗衣服",
+      "descrip": "我洗衣服了",
+      "money": "13",
+      "select": "-1",
+      "date": "2024-07-29"
+    },
+    {
       "id": "W2gDDR7ETT0OftP4SYReJ",
       "thing": "剪头",
       "descrip": "头发长了去理发",
